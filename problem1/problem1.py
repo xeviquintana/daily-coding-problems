@@ -1,4 +1,5 @@
 """
+[EASY]
 This problem was recently asked by Google.
 
 Given a list of numbers and a number k, return whether any two numbers from the list add up to k.
@@ -50,6 +51,13 @@ def add_up_to_k(arr: [int], k: int) -> bool:
 
 
 if __name__ == '__main__':
+    assert add_up_to_k_naive([], k=1) == False
+    assert add_up_to_k_naive([1], k=1) == False
+    assert add_up_to_k_naive([10, 15, 3, 7], k=17) == True
+    assert add_up_to_k_naive([5, 3, 10], k=20) == False
+    assert add_up_to_k_naive([5, 3, 10, 10], k=20) == True
+    assert add_up_to_k_naive([5, 3, 10, 10, 10], k=30) == False
+    
     assert add_up_to_k([], k=1) == False
     assert add_up_to_k([1], k=1) == False
     assert add_up_to_k([10, 15, 3, 7], k=17) == True
