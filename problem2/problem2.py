@@ -39,7 +39,7 @@ def product_array_no_division(arr: [int]) -> [int]:
     """
     product: [int] = []
 
-    for i, n in enumerate(arr):
+    for i, _ in enumerate(arr):
         left: int = 1
         right: int = 1
         for l in arr[:i]:
